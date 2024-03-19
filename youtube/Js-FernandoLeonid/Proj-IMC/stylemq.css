@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .container {
+        width: 85vw;
+        transition-duration: 200ms;
+    }
+
+    #title {
+        font-size: 3rem;
+    }
+
+    .input {
+        width: 400px;
+        transition-duration: 500ms;
+
+        & input {
+            width: 77%;
+        }
+    }
+
+    button {
+        width: 400px;
+    }
+
+    #resultado {
+        width: 400px;
+    }
+
+}
+
+@media screen and (min-width: 769px)  {
+    .container {
+        width: 85vw;        
+    }
+
+    #title {
+        font-size: 3.5rem;
+    }    
+
+    .input {
+        width: 90%;  
+        transition-duration: 500ms;
+
+        & label{
+            font-size: 1.7rem;
+        }
+
+        & input {
+            font-size: 1.7rem;
+            width: 77%;
+        }
+    }
+
+    button {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    #resultado {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+}
+@media screen and (min-width: 1030px){
+    .container {
+        width: 1000px;        
+    }
+}
