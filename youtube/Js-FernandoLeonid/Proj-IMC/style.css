@@ -108,12 +108,12 @@ button:not(:hover){
     user-select: none;
 }
 
-#resultado:hover {
+.transformar-resultado:hover {
     transform: scale(1.1);
     transition-duration: 300ms;
 }
 
-#resultado:not(hover) {
+.voltar-resultado:not(hover) {
     transform: scale(1.0);
     transition-duration: 500ms;
 }
