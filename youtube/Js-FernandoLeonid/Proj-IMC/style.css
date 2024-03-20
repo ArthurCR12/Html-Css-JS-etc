@@ -1,13 +1,21 @@
 body {
-    background-color: #012E40;
+    background-color: #012E40;    
 }
 
 main {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    width: 99dvw;
+    height: 99dvh;
     justify-content: center;
     align-items: center;
+}
+
+hr{
+    height: 5px;    
+    width: 100%;
+    border: 1px solid black;
+    background-color: black;
+    margin-top: -5px;
 }
 
 .container {
@@ -29,8 +37,7 @@ main {
     align-items: center;
     width: 100%;
     height: 50px;
-    font: bold 2.3rem arial;
-    border-bottom: solid 5px black;
+    font: bold 2.3rem arial;    
     margin-bottom: 20px;
     color: white;
     text-shadow: 2px 3px 2px black;
