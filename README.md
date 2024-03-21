@@ -2,8 +2,8 @@
  Esse repositorio é de coisas variadas que vejo na internet
 
  Exemplos:
-
-- <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-IMC/index.html" target="_blank">Calcule o seu IMC &#x1F680 &#x2642</a>
-- <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-Lampada/index.html" target="_blank">Funcionamento de uma lâmpada &#x1F680 &#x2642</a>
-
-Aparentemente os emojis não estão funcionando, pelo menos não no preview!
+- <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/css grid e flexbox/index.html" target="_blank">Grid e FlexBox</a>
+- <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-IMC/index.html" target="_blank">Calcule o seu IMC</a>
+- <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-Lampada/index.html" target="_blank">Funcionamento de uma lâmpada</a>
+- <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-Semafaro/index.html" target="_blank">Funcionamento de um Semáforo</a>
+- <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-SlideShow/index.html" target="_blank">Slide Show</a>
