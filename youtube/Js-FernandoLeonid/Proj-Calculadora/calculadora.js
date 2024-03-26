@@ -3,7 +3,8 @@
 const display = document.getElementById('display')
 const numeros = document.querySelectorAll('[id*=tecla]')
 const operadores = document.querySelectorAll('[id*=operador]')
-const teclas = {
+
+const teclado = {
     '0': 'tecla0',
     '1': 'tecla1',
     '2': 'tecla2',
@@ -18,10 +19,13 @@ const teclas = {
     '/': 'operadorDividir',
     '+': 'operadorAdicionar',
     '-': 'operadorSubtrair',
-    ',': 'tecla2',
-    'C': 'tecla2'
+    '=': 'igual',
+    'ENTER': 'igual',
+    'BACKSPACE': 'backspace',
+    'C': 'limparDisplay',
+    'ESCAPE': 'limparCalculo',
+    ',': 'decimal'
 }
-
 
 let novoNumero = true
 let operador;
@@ -98,10 +102,11 @@ const inserirDecimal = () => {
     }
 }
 
-const mapearTeclado = (evento) => {    
+const mapearTeclado = (evento) => {
     const tecla = evento.key.toUpperCase()
-    if(teclaPerm)
-    document.getElementById(mapearTeclado[tecla].click)   
+    const teclaPermitida = () => Object.keys(teclado).indexOf(tecla) != -1
+    if (teclaPermitida()) document.getElementById(teclado[tecla]).click()
+    console.log(tecla)
 }
 
 document.getElementById('igual').addEventListener('click', ativarIgual)
