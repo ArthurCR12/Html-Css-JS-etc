@@ -1,6 +1,7 @@
 .btn{
     border-style: none;    
     height: 40px;
+    margin-right: 10px;
     padding: 6px 12px;    
     background-color: black;
     color: white;
