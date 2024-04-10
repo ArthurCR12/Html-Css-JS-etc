@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Weather</h1>
@@ -13,17 +15,21 @@
     <main>
         <div class="container">
             <div class="input">
-                <label for="input-country">Country</label>  
+                <label for="input-country">Country</label>
                 <select name="input-country" id="input-country">
-                    
-                </select>                
+                    <option value="Country">Select</option>
+                </select>
                 <label for="input-city">City</label>
-                <input type="text" name="input-city" id="input-city">
+                <select name="input-city" id="input-city">
+                    <option value="City">Select</option>
+                    <option value="São Paulo">São Paulo</option>
+                </select>
+
                 <button id="find">Search</button>
             </div>
             <div class="place">
-                <h2 id="country">Brasil</h2>
-                <h3 id="city">Rio de Janeiro</h3>
+                <h2 id="country">Country</h2>
+                <h3 id="city">City</h3>
             </div>
             <div class="weather">
                 <h1 id="cel">Celsius 30°</h1>
@@ -36,4 +42,5 @@
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>
