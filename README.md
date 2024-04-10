@@ -5,6 +5,9 @@ Exemplos:
 - Aprendendo mais de CSS <br> 
   - <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/css grid e flexbox/index.html" target="_blank">Grid e FlexBox</a><hr>
 - Aprendendo a usar JavaScript <br>
+  - Projetos
+    - <a href="https://arthurcr12.github.io/Html-Css-JS-etc/projetos/changingbackcolor/index.html" target="_blank">Link 🔗</a> - Background Color <br>
+    
   - Videos Fernando Leonid
     - <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-IMC/index.html" target="_blank">Link 🔗</a> - Calcule o seu IMC <br>
     - <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-Lampada/index.html" target="_blank">Link 🔗</a> - Uma Lâmpada, DUPLO CLICK NEM PENSAR<br>
