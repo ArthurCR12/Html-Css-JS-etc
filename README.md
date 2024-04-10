@@ -7,6 +7,7 @@ Exemplos:
 - Aprendendo a usar JavaScript <br>
   - Projetos
     - <a href="https://arthurcr12.github.io/Html-Css-JS-etc/Projetos/changingbackcolor/index.html" target="_blank">Link 🔗</a> - Background Color <br>
+    - <a href="https://arthurcr12.github.io/Html-Css-JS-etc/Projetos/wheathersite/index.html" target="_blank">Link 🔗</a> - Wheather Site <br>
     
   - Videos Fernando Leonid
     - <a href="https://arthurcr12.github.io/Html-Css-JS-etc/youtube/Js-FernandoLeonid/Proj-IMC/index.html" target="_blank">Link 🔗</a> - Calcule o seu IMC <br>
