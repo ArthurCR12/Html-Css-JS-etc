@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="bd">
     <header>
         <h1>Weather</h1>
     </header>
@@ -18,11 +18,18 @@
                 <label for="input-country">Country</label>
                 <select name="input-country" id="input-country">
                     <option value="Country">Select</option>
+                    <option value="Brasil">Brasil</option>
                 </select>
                 <label for="input-city">City</label>
                 <select name="input-city" id="input-city">
                     <option value="City">Select</option>
                     <option value="São Paulo">São Paulo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Tres Lagoas">Tres Lagoas</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="Ushuaia">Ushuaia</option>
+                    <option value="Pechora">Pechora</option>
+
                 </select>
                 <button id="find">Search</button>
             </div>
@@ -31,8 +38,10 @@
                 <h3 id="city">City</h3>
             </div>
             <div class="weather">
-                <h1 id="cel">Celsius 30°</h1>
-                <h1 id="fah">Fahrenheit 86°</h1>
+                <h2 id="cel">Celsius</h2>
+                <h2 id="fah">Fahrenheit</h2>
+                <h3 id="humidity">Humidity</h3>
+                <h3 id="description">Description</h3>
             </div>
         </div>
     </main>
