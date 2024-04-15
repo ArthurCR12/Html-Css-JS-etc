@@ -1,25 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const lblWearher = document.getElementById('weather')
     const inputCity = document.getElementById('input-city')
     const txtCel = document.getElementById('cel')
     const txtFah = document.getElementById('fah')
     const txtHumi = document.getElementById('humidity')
     const txtDescr = document.getElementById('description')
     const txtCity = document.getElementById('city')
+    const lblCity = document.getElementById('lbl-city')
     const apiKey = 'd6e3a416459d4b7daf7b6b0854bfdde6'
     const cbLang = document.getElementById('check')
 
-    async function fetchWeather(city) {
+    async function fetchWeather(city, lang) {
 
         try {
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&appid=${apiKey}`
-            //const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&appid=${apiKey}&lang=pt_br`
+            //const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${inputCity.value}&appid=${apiKey}`
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=${lang}`     
+            console.log(apiUrl)       
             const response = await fetch(apiUrl)
             if (!response.ok) {
                 throw new Error("Could not fetch weather data")
-            }
-            if (city == 'City') {
-                throw new Error("Please select a country or city!")
-            }
+            }            
             console.log(apiUrl)
             return await response.json()
         }
@@ -36,19 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
         txtCity.textContent = city
         txtCel.textContent = `Celsius ${tempCelsius.toFixed(1)}°`
         txtFah.textContent = `Fahrenheit ${tempFahrenheit.toFixed(1)}°`
-        txtHumi.textContent = `Humidity ${humidity}%`
-        txtDescr.textContent = description
+        changeLang(humidity,description)
         changeBack(tempCelsius)
     }
 
     async function temp() {
         try {
             const city = inputCity.value.trim()
-
+            let lang = ''
             if (!city) {
                 alert("Please enter a valid city name")
             }
-            const weather = await fetchWeather(city)
+            if (cbLang.checked){
+                lang = 'pt_br'                
+            }            
+            const weather = await fetchWeather(city, lang)
             displayWeather(weather)
         }
 
@@ -76,22 +78,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ]
 
-    const changeLang = () => {
-        if (cbLang.checked) {
-            console.log('checked')
-            txtCity.textContent = 'Cidade'            
-            txtHumi.textContent = `Humidade `
-            txtDescr.textContent = 'Descrição'
+    const changeLang = (humidity, description) => {
+        if (cbLang.checked) {    
+            lblWearher.textContent = 'Clima'
+            lblCity.textContent = 'Cidade'
+            txtCity.textContent = 'Cidade'
+            txtHumi.textContent = `Humidade ${humidity}%`
+            txtDescr.textContent = `Descrição ${description}`
         }
-        else {
-            console.log('not checked')
-            txtCity.textContent = "City"            
-            txtHumi.textContent = `Humidity`
-            txtDescr.textContent = 'Description'
+        else {            
+            lblWearher.textContent = 'Weather'
+            txtCity.textContent = "City"      
+            lblCity.textContent = 'City'      
+            txtHumi.textContent = `Humidity ${humidity}%`
+            txtDescr.textContent = `Description ${description}`
         }
     }
 
-    document.getElementById('find').addEventListener('click', temp)
-    cbLang.addEventListener('click', changeLang)
+    document.getElementById('find').addEventListener('click', temp)    
 })
 
